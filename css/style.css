@@ -1,0 +1,22 @@
+.logoZuri{
+
+}
+
+nav ul{
+    margin-left: -43px;
+}
+
+nav li{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+#inicio{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#opcoes{
+margin-left: 10px;
+}
