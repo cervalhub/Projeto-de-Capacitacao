@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../scriptLista.js"></script>
     <title>To-Do</title>
 </head>
 <body>
@@ -34,32 +35,47 @@
     
         
 
-        <form>
+        <div class="form">
             <h2 id="novaTarefa">Nova tarefa</h2>
 
             <label id="textoToDo">Tarefa:</label>
      
-            <input type="text" required id="tarefa">
+            <input type="text" required id="tarefas">
      
             <label id="textoToDo">Prioridade:</label>
      
-            <select name="" id="" required>
+            <select name="" id="prioridade" required>
                 <option value="" selected>Selecione uma das opções</option>
-                <option value="">Alta</option>
-                <option value="">Média</option>
-                <option value="">Baixa</option>
+                <option value="Baixa">Baixa</option>
+                <option value="Media">Média</option>
+                <option value="Alta">Alta</option>
             </select>
      
             <label id="data">Data limite:</label>
-            <input type="text" required >
+            <input type="date" id="dataDois" required >
 
-            <button id="enviarToDo">Enviar</button>
-        </form>
+            <button id="enviarToDo" onclick="tarefa.enviar()">Enviar</button>
+        </div>
   
 
         <section>
             <div>
                 <img src="../imagens/listaVazia.png" alt="" id="listaVazia">
+            </div>
+
+            <div class="content">
+                <table border="1">
+                    <thead>
+                        <th>Tarefa</th>
+                        <th>Prioridade</th>
+                        <th>Data Limite</th>
+                        <th>Feito</th>
+                    </thead>
+                    <tbody id="tbdodyLista">
+                        
+                    </tbody>
+                </table>
+
             </div>
         </section>
     </main>

@@ -161,13 +161,13 @@ header{
 
 /* CSS DA TELA DE TO-DO */
 
-form{
+.form{
     display: flex;
     flex-direction: column;
     margin-top: 30px;
 }
 
-form input, select{
+.form input, select{
     margin-bottom: 10px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
@@ -225,4 +225,9 @@ form input, select{
     float: right;
     display: inline-block;
     margin-top: -329px;
+}
+
+.content table{
+    margin-top: 30px;
+    margin-left: 20px;
 }
