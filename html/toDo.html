@@ -28,24 +28,40 @@
         <header>
         <div class="bem_vindo">
             <label id="label_nomeUsuario">Olá, <b>PAULA</b></label>   
+            <img src="../imagens/paula.png" alt="" id="imagemPaula">
            </div>
         </header>
     
-   <section>
-    <div>
-       <p id="novaTarefa">Nova tarefa</p>
+        
 
-       <input type="text">
+        <form>
+            <h2 id="novaTarefa">Nova tarefa</h2>
 
-       <select name="" id=""></select>
+            <label id="textoToDo">Tarefa:</label>
+     
+            <input type="text" required id="tarefa">
+     
+            <label id="textoToDo">Prioridade:</label>
+     
+            <select name="" id="" required>
+                <option value="" selected>Selecione uma das opções</option>
+                <option value="">Alta</option>
+                <option value="">Média</option>
+                <option value="">Baixa</option>
+            </select>
+     
+            <label id="data">Data limite:</label>
+            <input type="text" required >
 
-       <input type="text">
-    </div>
-
+            <button id="enviarToDo">Enviar</button>
+        </form>
   
-   </section>
 
-      
+        <section>
+            <div>
+                <img src="../imagens/listaVazia.png" alt="" id="listaVazia">
+            </div>
+        </section>
     </main>
 </div>
 </body>
