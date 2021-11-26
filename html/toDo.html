@@ -8,7 +8,7 @@
     <script src="../scriptLista.js"></script>
     <title>To-Do</title>
 </head>
-<body>
+<body onload="todo.carregarPagina()">
 
 <div class="conteiner">
     <header class="logoEOpcoes">
@@ -28,8 +28,10 @@
     <main>
         <header>
         <div class="bem_vindo">
-            <label id="label_nomeUsuario">Olá, <b>PAULA</b></label>   
-            <img src="../imagens/paula.png" alt="" id="imagemPaula">
+            <label id="label_nomeUsuario">Olá,</label>   
+            <div id="imagemPaula">
+
+            </div>
            </div>
         </header>
     
@@ -64,6 +66,7 @@
             </div>
 
             <div class="content">
+               
                 <table border="1">
                     <thead>
                         <th>Tarefa</th>
@@ -74,7 +77,7 @@
                     <tbody id="tbdodyLista">
                         
                     </tbody>
-                </table>
+                </table> 
 
             </div>
         </section>
